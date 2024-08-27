@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+            box-sizing: content-box;
+        }
+        .el,.el,.el,.el,.el{
+            height: 100vh;
+            border: 1px solid red;
+        }
+        nav{
+            display: flex;
+            width: 99vw;
+        }
+        .navlink {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 49%;
+            background-color: white;
+            padding: 0px;
+
+        }
+        .navlink li{
+            list-style-type: none;
+            margin-right: 3%;
+
+        }
+        .navlink li a{
+            text-decoration:none;
+            color:gray;
+            margin-left: 2%;
+        }
+        .logo{
+            margin-left: 50px;
+            width: 20%;
+        }
+        .el1{
+            height: 100vh;
+            background-image: url(banner-bg.png);
+            background-repeat: no-repeat;
+            background-position: right;
+        }
+        .el1_a{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 40%;
+            align-items: center;
+            height: 100%;
+            text-align: start;
+            margin-left: 10px;
+        }
+        .el1_a h1{
+            font-size: bold;
+        }
+        .el1_a button{
+            border-radius: 18px;
+            background-color: yellowgreen;
+            padding: 12px;
+            border: 0px;
+            color: white;
+        }
+        .el1_a h2{
+            margin-left: 0px;
+        }
+        .el2 button{
+            border-radius: 18px;
+            background-color: yellowgreen;
+            padding: 12px;
+            border: 0px;
+            color: white;
+        }
+        .card-container {
+         display: flex;
+        justify-content: space-around;
+         padding: 20px;
+        }
+        .card {
+          background-color: #fff;
+          border-radius: 8px;
+          box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+          text-align: center;
+          padding: 20px;
+          max-width: 300px;
+          transition: transform 0.3s ease;
+        }
+.card:hover {
+    transform: translateY(-5px);
+}
+.card .icon {
+    font-size: 48px;
+    color: #FF5733;
+    margin-bottom: 15px;
+}
+.card .number {
+    font-size: 72px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.1);
+    position: absolute;
+     /* top: 20px;
+     left: 20px;  */
+    /* z-index: -1; */
+}
+.card h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #333;
+}
+.card p {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 20px;
+}
+.card .btn {
+    background-color: #FF5733;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.card .btn:hover {
+    background-color: #e04b27;
+}
+        .some{
+            height: 100vh;
+            /* border: 1px solid red; */
+            background-image: url(left-bg-decor.png);
+            background-repeat: no-repeat;
+            display: flex;
+        }
+        .some img{
+            margin-top: 100px;
+            margin-left: 100px;
+        }
+        .icon1,.word{
+          display: flex;  
+          flex-direction:row;
+        }
+        .word{
+            padding: 90px 10px 0px 25px;
+            flex-direction:column;
+        }
+        .word p{
+            margin-top: -2px;
+            padding: 4px;
+        }
+          
+        .footer{
+            background-image:url(footer-bg.png);
+            /* border: 1px solid red; */
+            background-repeat: no-repeat;
+            height: 100vh;
+        }
+        .box{
+            height: 250px;
+            width: 350px;
+            background-color:white;
+            border: 1px solid red;
+            transform: translate(150px,250px);
+        }
+        .footer button{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
+            margin: 20px 0px 0px 80px;
+            background-color:rgb(216, 150, 27);
+            border-radius: 20px;
+        }
+        .box input{
+            border: none;
+        }
+        .footer{
+            display: flex;
+        }
+        .more{
+            transform: translate(260px 250px);
+            margin-left: 200px;
+            margin-top: 250px;
+        }
+        .more p{
+            color: rgb(235, 244, 250);
+        }
+        .copy{
+           margin-top: 150px;
+        }
+        .box button:hover{
+              background-color: blue;
+        }
+        .el4{
+            background-image: url("right-bg-decor.png");
+            background-position: right;
+            background-repeat: no-repeat;
+            height: 100vh;
+            
+        }
+        .flex{
+            height: 100%;
+            width: 95%;
+            /* border: 2px solid rebeccapurple; */
+        }
+        .about{
+            height: 18%;
+            width: 50%;
+        
+        }
+        .box1,.box2{
+            height: 40vh;
+            width: 50vh;
+            
+            text-align: center;
+            background-color: rgb(179, 105, 105);
+            color: whitesmoke;   
+        }
+        .flex{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            row-gap: 30px;
+        }
+
+        .boxcontainer{
+            display: flex;
+            
+            column-gap: 40px;
+        }
+        .box1,.box2{
+            position: relative;
+            
+            
+        }
+        .box1 img,.box2 img{
+            position: absolute;
+            top: -15px;
+            left: -20px;
+
+        }
+      
+        @media screen and (width<575px){
+            .boxcontainer{
+                display: flex;
+                flex-direction: column;
+                row-gap: 10px;
+                width: 90%;
+
+
+            }
+
+            .box1,.box2{
+                width: 90%;
+            }
+            .flex{
+                height: 100vh;
+                width: 90%;
+            }
+
+
+
+
+
+        }
+    </style>
+</head>
+<body>
+    <div class="el1">
+        <nav>
+            <div class="logo">
+                <h1>LAVA</h1>
+            </div>
+            <ul class="navlink">
+                <li><a href="" style="color: yellow;">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Testimonials</a></li>
+                <li><a href="#">Dropdown</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>   
+        </nav>
+        <div class="el1_a">
+            <h2>Simple App that<br>We<span style="color: yellowgreen;">CREATE</span></h2><br>
+            <p>Lava <span style="color: blue;">HTML Landing page</span> template is provided by <span style="color: blue;">TemplateMo</span>. You can modify and use it for your commercial websites for free of charge.Please do not redistribute this template zp fig for a <span style="color: blue;">Downalad purpose</span>.or you will need to <span style="color: blue;">Contact</span> us for additional consing of our template or to get a psd fie.</p><br>
+            <button>Know Us Better</button>
+        </div>
+    </div>
+    <div class="el2">
+        <div class="card-container">
+            <div class="card">
+                <div class="number">01</div>
+                <div class="icon">
+                    <img src="features-icon-1.png">
+                </div>
+                <h3>Trend Analysis</h3>
+                <p>Curabitur pulvinar vel odio sed sagittis. Nam maximus ex diam, nec consectetur diam.</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+            <div class="card">
+                <div class="number">02</div>
+                <div class="icon">
+                    <img src="features-icon-2.png">
+                </div>
+                <h3>Site Optimization</h3>
+                <p>Curabitur pulvinar vel odio sed sagittis. Nam maximus ex diam, nec consectetur diam.</p>
+                <a href="#" class="btn">Discover More</a>
+            </div>
+            <div class="card">
+                <div class="number">03</div>
+                <div class="icon">
+                    <img src="features-icon-3.png">
+                </div>
+                <h3>Email Design</h3>
+                <p>Curabitur pulvinar vel odio sed sagittis. Nam maximus ex diam, nec consectetur diam.</p>
+                <a href="#" class="btn">More Detail</a>
+            </div>
+        </div>
+    </div>
+    <div class="el3">
+        <div class="some">
+            <img src="left-image.png">
+            <div class="maincontainer">
+                <div class="icon1">
+                    <img src="about-icon-01.png">
+                    <div class="word">
+                        <h2>Vestibulum pulvinar rhonocus</h2>
+                        <p>Duis uma The pulvinar is usually grouped as one of the lateral thalamic nuclei in rodents and carnivores, and stands as an independent complex in primates</p>
+                    </div>
+                </div>
+                <div class="icon1">
+                    <img src="about-icon-02.png">
+                    <div class="word">
+                        <h2>Sod blandit quam in voilt</h2>
+                        <p>Lorem ipsum banksia dolor sit lily amet, snapdragon cons adipiscing elit, sed do poppy eiusmod tempor incididunt ut honeysuckle labore et dolore magna wildflower aliqua</p>
+                    </div>
+                </div>
+                <div class="icon1">
+                    <img src="about-icon-03.png">
+                    <div class="word">
+                        <h2>Aenean foucibus venenatis</h2>
+                        <p>Lorem ipsum banksia dolor sit lily amet, snapdragon cons adipiscing elit, sed do poppy eiusmod tempor incididunt ut honeysuckle labore et dolore magna wildflower aliqua</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>   
+    <div class="el4">
+        <div class="flex">
+            <div class="about">
+                <h1>What they Thick<span style="color: yellowgreen;">About Us</span> </h1>
+                <br>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis quas, nihil maxime amet voluptates quisquam ea harum nam voluptas cupiditate rerum iure officia iste eligendi doloremque, sunt impedit pariatur labore.</p>
+            </div>
+
+            <div class="boxcontainer">
+                <div class="box1">
+                    <br>
+                    <p>******</p>
+                    <br>
+                    <h4>Janathan smart</h4>
+                    <br>
+                    <br>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo ut sit repudiandae enim doloribus ab aspernatur totam culpa veritatis sed sequi neque unde inventore eos, ducimus non iusto tenetur et.</p>
+                    <img height="25%" src="testimonial-author-1.png" alt="">
+
+                </div>
+                <div class="box2">
+                    <br>
+                    <p>******</p>
+                    <br>
+                    <h 4>Janathan smart</h4>
+                    <br>
+                    <br>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo ut sit repudiandae enim doloribus ab aspernatur totam culpa veritatis sed sequi neque unde inventore eos, ducimus non iusto tenetur et.</p>
+                    <img height="25%" src="testimonial-author-1.png" alt="">
+
+            
+                    
+
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+        
+    </div>
+       <div class="footer">
+        <div class="box">
+            <input type="text" id="text" placeholder="Full Name" style="margin: 20px 10px 0px 20px; width: 110px; padding: 10px; background-color: rgb(247, 250, 253);">
+            <input type="text" id="text" placeholder="E-Mail Adress" style="margin: 20px 10px 0px 20px; width: 110px; padding: 10px; background-color: rgb(247, 250, 253);">
+            <input type="text" id="text" placeholder="Your Message" style="margin: 20px 10px 0px 20px; width: 220px; padding: 40px; background-color: rgb(247, 250, 253);">
+             <button>SEND MESSAGE NOW</button>            
+        </div>
+        <div class="more">
+            <h1 style="color: white;">MORE ABOUT <span style="color: yellowgreen;">LAVA</span> </h1>
+            <P>Lava International Ltd is an Indian multinational technology company that <Br>smartphones, laptops, computer hardware, and consumer electronics hardware<br>lava international smartphones ltd is an indian</P><br>
+            <p>Our design team wanted circular globules to change form as they stretched <br>and squashed mid-flight. Our challenge was to achieve this in a performant<br> way, using just HTML and CSS.</p>
+            <article class="copy">
+                <p>Copyright @ 2023 Lava Landing Page|Designed by Templates</p>
+            </article>
+        </div>
+
+       </div>
+</body>   
+</html>

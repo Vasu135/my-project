@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .footer{
+            background-image:url(footer-bg.png);
+            border: 1px solid red;
+            background-repeat: no-repeat;
+            height: 100vh;
+        }
+        .box{
+            height: 250px;
+            width: 350px;
+            background-color:white;
+            border: 1px solid red;
+            transform: translate(150px,250px);
+        }
+        .footer button{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
+            margin: 20px 0px 0px 80px;
+            background-color:rgb(216, 150, 27);
+            border-radius: 20px;
+        }
+        .box input{
+            border: none;
+        }
+        .footer{
+            display: flex;
+        }
+        .more{
+            transform: translate(260px 250px);
+            margin-left: 200px;
+            margin-top: 250px;
+        }
+        .more p{
+            color: rgb(235, 244, 250);
+        }
+        .copy{
+           margin-top: 150px;
+        }
+        .box button:hover{
+              background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="footer">
+        <div class="box">
+            <input type="text" id="text" placeholder="Full Name" style="margin: 20px 10px 0px 20px; width: 110px; padding: 10px; background-color: rgb(247, 250, 253);">
+            <input type="text" id="text" placeholder="E-Mail Adress" style="margin: 20px 10px 0px 20px; width: 110px; padding: 10px; background-color: rgb(247, 250, 253);">
+            <input type="text" id="text" placeholder="Your Message" style="margin: 20px 10px 0px 20px; width: 220px; padding: 40px; background-color: rgb(247, 250, 253);">
+             <button>SEND MESSAGE NOW</button>            
+        </div>
+        <div class="more">
+            <h1 style="color: white;">MORE ABOUT <span style="color: yellowgreen;">LAVA</span> </h1>
+            <P>Lava International Ltd is an Indian multinational technology company that <Br>smartphones, laptops, computer hardware, and consumer electronics hardware<br>lava international smartphones ltd is an indian</P>
+            <p>Our design team wanted circular globules to change form as they stretched <br>and squashed mid-flight. Our challenge was to achieve this in a performant<br> way, using just HTML and CSS.</p>
+            <article class="copy">
+                <p>Copyright @ 2023 Lava Landing Page|Designed by Templates</p>
+            </article>
+        </div>
+    </div>
+    
+</body>
+</html>
